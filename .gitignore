@@ -15,3 +15,8 @@
 
 # Ignore Byebug command history file.
 .byebug_history
+
+# hide setting file
+/config/*.yml
+/public/uploads/*
+
