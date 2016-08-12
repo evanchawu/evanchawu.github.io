@@ -915,7 +915,7 @@ h3 {
  * ==========================
  */
 .header-background {
-  background: url('../images/bg-1.jpg');
+  background: image-url('bg-1.jpg');
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -1236,7 +1236,7 @@ h3 {
  * ===============================
  */
 .testimonials-bg {
-  background: url('../images/bg-1.jpg');
+  background: image-url('bg-1.jpg');
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -1350,7 +1350,7 @@ h3 {
  * ===============================
  */
 .news_letter-bg {
-  background: url('../images/subscribe-bg.jpg');
+  background: image-url("subscribe-bg.jpg");
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -1907,7 +1907,7 @@ footer .footer-body .copyright p .fa {
  * ====================================
  */
 .register-background {
-  background: url('../images/bg-1.jpg');
+  background: image-url('bg-1.jpg');
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -1946,7 +1946,7 @@ footer .footer-body .copyright p .fa {
   color: rgba(255, 255, 255, 0.45) !important;
 }
 .register-form select {
-  background: url(../images/arrow.png) no-repeat right;
+  background: image-url('arrow.png') no-repeat right;
   font-size: 20px;
   line-height: 1;
   height: 68px;
@@ -2225,7 +2225,7 @@ footer .footer-body .copyright p .fa {
  * ===================================
  */
 .countdown-background {
-  background: url('../images/subscribe-bg.jpg');
+  background: image-url("subscribe-bg.jpg");
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
