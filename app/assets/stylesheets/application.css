@@ -1,15 +1,34 @@
 /*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * This is a manifest file that'll be compiled into application, which will include all the files
  * listed below.
  *
  * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
  * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
  *
  * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * compiled file so the styles you add here take precedence over styles defined in any other SCSS
  * files in this directory. Styles in this file should be added after the last require_* statement.
  * It is generally better to create a new file per style scope.
  *
+	*= require font-awesome
+	*= require Finiti/bootstrap/bootstrap.min
+	*= require Finiti/icomoon
+	*= require Finiti/magnific-popup
+
+
+	*= require Finiti/owl.carousel
+	*= require Finiti/owl.theme
+	*= require Finiti/owl.transitions
+
+	*= require Finiti/flexslider
+	*= require Finiti/animate
+
+	*= require Finiti/hover-effect
+
+	*= require Finiti/style
+	*= require Finiti/responsive
+
+	*= require Finiti/colors/blue
  *= require_tree .
  *= require_self
  */

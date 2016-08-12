@@ -10,7 +10,27 @@
 // Read Sprockets README (https://github.com/rails/sprockets#sprockets-directives) for details
 // about supported directives.
 //
-//= require jquery
 //= require jquery_ujs
-//= require turbolinks
-//= require_tree .
+
+//= require Finiti/bootstrap/bootstrap.min
+//= require Finiti/matchMedia
+//= require Finiti/navbar.matchMedia
+//= require Finiti/jquery.ajaxchimp.min
+//= require Finiti/jquery.stellar.min
+//= require Finiti/jquery.scrollTo.min
+//= require Finiti/jquery.localScroll.min
+//= require Finiti/owl.carousel.min
+//= require Finiti/jquery.nav
+//= require Finiti/wow.min
+//= require Finiti/owl.carousel.min
+//= require Finiti/jquery.countdown
+//= require Finiti/jquery.flexslider-min
+//= require Finiti/jquery.counterup.min
+//= require Finiti/jquery.magnific-popup.min
+//= require Finiti/custom-scripts
+
+
+
+
+
+
