@@ -19,4 +19,4 @@
 # hide setting file
 /config/*.yml
 /public/uploads/*
-
+/config/deploy.rb
