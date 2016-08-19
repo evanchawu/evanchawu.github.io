@@ -13,7 +13,7 @@ p {
   color: #666666;
 }
 .overlay-color {
-  background-color: rgba(0, 0, 0, 0.69);
+  background-color: rgba(0, 0, 0, 0.2);
 }
 .section-heading:after {
   background-color: #009beb;
