@@ -83,4 +83,7 @@ Rails.application.configure do
 
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
+
+  # General Settings
+  config.app_domain = 'http://ec2-52-198-30-205.ap-northeast-1.compute.amazonaws.com/'
 end
