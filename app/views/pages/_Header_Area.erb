@@ -30,7 +30,13 @@
                             <li class="section-selector-2"><a href="#schedule">賽程</a></li>
                             <li class="section-selector-2"><a href="#two-cols-description-with-image">關於</a></li>
                             <li class="section-selector-2"><a href="#pricing-table">贊助</a></li>
-                            <li class="section-selector-2"><a href="#map_contact">場地</a></li>
+                            <!-- <li class="section-selector-2"><a href="#map_contact">場地</a></li> -->
+
+                            <% if user_signed_in? %>
+                                <li class="section-selector-2"><%= link_to "登出", destroy_user_session_path, method: :delete %></li>
+                            <% else %>
+                                <li class="section-selector-2"><%= link_to "登入", user_session_path %></li>
+                            <% end %>
 <!--                             <li class="section-selector-2"><a class="new-page blog" href="blog.html">文章</a></li> -->
                         </ul>
                     </div>
