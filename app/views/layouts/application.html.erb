@@ -16,6 +16,11 @@
 	</head>
   <body>
     <%= yield %>
+
+    <!-- for devise -->
+    <p class="notice"><%= notice %></p>
+    <p class="alert"><%= alert %></p>
+
     <script src="https://code.jquery.com/jquery-2.2.4.min.js"   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="   crossorigin="anonymous"></script>  
     <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCXtKPN-097FWbfneioTa23SpRO-mEdfAs"></script>
