@@ -636,12 +636,12 @@ $(function() {
    * =======================================
    */
   function init_map() {
-    var myLocation = new google.maps.LatLng(24.892467,91.87048);
+    var myLocation = new google.maps.LatLng(25.005217, 121.534541);
 
     var draggableValue;
       if($(document).width() <= 768){
       draggableValue = false;   /*This option is used for disabling drag.*/
-    }
+    } 
     else{
       draggableValue = true;   /*This option is used for disabling drag.*/
     }
