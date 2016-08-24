@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <meta charset="utf-8">
+    <meta name="description" content="台灣 街頭健身 比賽 囡仔 " />
+    <meta name="keywords" content="台灣, 街頭健身, 比賽, 囡仔, 地方動員, streetworkout, Street-Workout Taiwan Union, calisthenic" />
+    <meta name="author" content="囡仔">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <head lang="en">
+
+    <!-- TITLE OF SITE -->
+    <title> 囡仔 | Street-Workout Taiwan Union </title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag 'sign_in', media: 'all', 'data-turbolinks-track': 'reload' %>
+
+	</head>
+  <body>
+
+    <%= yield %>
+
+    <%= javascript_include_tag 'sign_in', 'data-turbolinks-track': 'reload' %>
+    
+  </body>
+</html>
