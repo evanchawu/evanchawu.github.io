@@ -1,12 +1,26 @@
+<!-- Start: Background Video 
+================================-->
+<!-- <video autoplay loop class="fillWidth background-video">
+    <source src="video/event-video.mp4" type="video/mp4"/>
+    <source src="video/event-video.webm" type="video/webm"/>
+</video> -->
+
+<%= video_tag("event-video.mp4", autoplay: true, loop: true, class: "fillWidth background-video") %>
+    
+<div class="poster hidden">
+    <img src="video/event-video.jpg" alt="event video poster">
+</div>
+<!-- End: Background Video 
+================================-->
 
 <!--Start: Header Area
 ==============================-->
-<header class="header-background header header-2" id="header" data-stellar-background-ratio="0.5">
+<header class="header header-2" id="header" data-stellar-background-ratio="0.5"> 
     <div class="fix header-overlay overlay-color">
 
         <!-- Start: Navbar Area  -->
         <div class="header-navbar" id="header-navbar">
-
+         
             <nav class="navbar navbar-fixed-top header-nav-2" id="myNavbar" >
                 <div class="container">
                     <div class="navbar-header">
@@ -18,26 +32,21 @@
                         </button>
 
                         <!-- TEMPLATE LOGO -->
-                        <a class="navbar-brand" href="#">
-                            <span><%= image_tag("草根盃.png", class: "img-responsive") %></span>
+                        <a class="navbar-brand" href="#"><span>
+                        <%= image_tag("logo.png", class: "img-responsive") %>
+                        <!-- <img src="images/logo.png" alt="" class="img-responsive"></span> -->
                         </a>
                     </div>
 
                     <div class="collapse navbar-collapse" id="finiti-navbar-collapse">
                         <ul id="navbar-nav-2" class="nav navbar-nav navbar-right">
                             <!--  -->
-                            <li class="section-selector-2"><a href="#header">報名</a></li>
-                            <li class="section-selector-2"><a href="#schedule">賽程</a></li>
-                            <li class="section-selector-2"><a href="#two-cols-description-with-image">關於</a></li>
-                            <li class="section-selector-2"><a href="#pricing-table">贊助</a></li>
-                            <!-- <li class="section-selector-2"><a href="#map_contact">場地</a></li> -->
-
-                            <% if user_signed_in? %>
-                                <li class="section-selector-2"><%= link_to "登出", destroy_user_session_path, method: :delete %></li>
-                            <% else %>
-                                <li class="section-selector-2"><%= link_to "登入", user_session_path %></li>
-                            <% end %>
-<!--                             <li class="section-selector-2"><a class="new-page blog" href="blog.html">文章</a></li> -->
+                            <li class="section-selector-2"><a href="#header">Home</a></li>
+                            <li class="section-selector-2"><a href="#schedule">Schedule</a></li>
+                            <li class="section-selector-2"><a href="#two-cols-description-with-slider">About</a></li>
+                            <li class="section-selector-2"><a href="#sponsore">Sponsor</a></li>
+                            <li class="section-selector-2"><a href="#map_contact">Contact</a></li> 
+                            <!-- <li class="section-selector-2"><a class="new-page blog" href="blog.html">Blog</a></li>  -->
                         </ul>
                     </div>
                 </div>
@@ -45,69 +54,52 @@
 
         </div>
         <!-- End: Navbar Area  -->
-
+        
         <div class="container" id="header-body">
             <div class="row header-body section-separator">
 
-                <!-- Start: Section Header -->
-                <div class="col-md-7 col-sm-12 header-content-2 wow fadeInRight">
-                    <h1>
-                        <span class="heading-tag-1 ">草根力量</span> <br>
-                        <span class="heading-tag-2">鋼鐵對決</span> <br>
-                        <span class="heading-tag-3">2016草根盃</span>
+                <!-- Headline Goes HEre -->
+                <div class="cd-intro no-csstransitionswow fadeInDown" data-wow-delay="0.3s">
+                    <h1 class="cd-headline rotate-1">Hello! Welcome To 
+
+                        <!--Word Slider start-->
+                        <span class="cd-words-wrapper">
+                            <b class="is-visible">草地盃 !</b>
+                            <b>2016 !</b>
+                            <b>鋼鐵對決 !</b>
+                        </span>
+                        <!--Word Slider end-->
                     </h1>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit corrupti facilis
-                    </p>
                 </div>
-                <!-- End: Section Header -->
 
-                <!-- Header contant -->
-                <div class="col-md-5 col-sm-12 header-registor-form wow fadeInLeft">
+                <!-- Detail -->
+                <p class="wow fadeInDown" data-wow-delay="0.6s">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                </p>
 
-                    <form id="register-form" method="post" class="form input-group register-form">
-                        <div class="container-fluid">
-                            <div class="row">
-
-                                <div class="col-xs-12">
-                                    <input name="name" id="register-name" class="form-cus form-control" type="text" placeholder="Name" required>
-                                </div>
-
-                                <div class="col-xs-12">
-                                    <input name="email" id="register-email" class="form-cus form-control" type="email" placeholder="Email" required>
-                                </div>
-
-                                <div class="clearfix visible-xs"></div>
-
-                                <div class="col-xs-12 dropDown">
-                                    <select name="ticket" id="register-ticket" class="form-control">
-                                        <option value="Basic">白T ( 贊助200NT )</option>
-                                        <option value="Standard">黑T ( 贊助300NT )</option>
-                                    </select>
-                                </div>
-                                <div class="form-group col-xs-12">
-                                    <button class="btn btn-1 btn-top">報名</button>
-                                </div>
-
-                            </div>
-                        </div>
-                    </form>
-
-                </div><!-- End: .col-md-6, .col-sm-12  -->
+                <!-- Start: Button area -->
+                <div class="buy-tricket btn-scroll wow fadeInDown" data-wow-delay="0.9s">
+                    <a href="#pricing-table" class="btn btn-1 btn-top">參賽！</a>
+                    <!--<button class="btn btn-1 btn-1c">Button</button>-->
+                </div>
+                <!-- End: Button area" -->
 
                 <!-- button -->
-                <div class="btn-scroll-2">
-                    <a class="btn-down-chack btn btn-1" href="#partner"><i class="fa fa-angle-down"></i></a>
+                <div class="btn-scroll-2 wow fadeInDown" data-wow-delay="1s">
+                    <a class="btn-down-chack btn btn-1" href="#partner">
+                    <%= image_tag("down.png") %> 
+                    <!-- <img src="images/down.png" alt=""> -->
+                    </a>
                 </div>
 
             </div>
-            <!-- End: .row .header-body .section-separator  -->
-        </div>
-        <!-- End: .container  -->
+            <!-- End: header-body  -->
+        </div> 
+        <!-- End: container  -->
 
-    </div>
+    </div> 
     <!-- End: .fix .header-overlay .overlay-color  -->
-</header>
+</header> 
 <!--End: Header Area
 ==============================-->
 

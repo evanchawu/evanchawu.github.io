@@ -27,7 +27,8 @@
 //= require Finiti/jquery.flexslider-min
 //= require Finiti/jquery.counterup.min
 //= require Finiti/jquery.magnific-popup.min
-//= require Finiti/custom-scripts
+//= require Finiti/animated-headline.js
+//= require Finiti/custom-scripts-3
 
 
 
