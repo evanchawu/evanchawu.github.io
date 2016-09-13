@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
 
   root to: 'pages#homepage'
-
+  get '/google44f389a0657568f0.html', to: redirect('/google44f389a0657568f0.html')
   get '/contest_policy.pdf', to: redirect('/contest_policy.pdf')
 
   devise_for :users, :controllers => { omniauth_callbacks: 'omniauth_callbacks', sessions: 'users/sessions' }
