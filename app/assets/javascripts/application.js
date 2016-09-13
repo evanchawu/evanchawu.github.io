@@ -29,9 +29,4 @@
 //= require Finiti/jquery.magnific-popup.min
 //= require Finiti/animated-headline.js
 //= require Finiti/custom-scripts-3
-
-
-
-
-
-
+//= require type_form
