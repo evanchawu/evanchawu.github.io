@@ -852,7 +852,7 @@ h3 {
   -o-transition: all 0.2s ease-out;
   -ms-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
-  padding: 13px;
+  padding: 0px; /*首頁左上角logo 邊框*/
 }
 .header-nav-2 .navbar-header a span {
   padding: 58px 10px 10px 10px;
@@ -891,7 +891,7 @@ h3 {
   transform: translate3d(0, 0, 0) !important;
 }
 .header-nav-2.navbar-home {
-  background-color: rgba(255, 255, 255, 0.98);
+  background-color: rgba(0, 0, 0, 1); /*網頁往下拉最上面header的背景*/
   box-shadow: 0 5px 65px 0 rgba(0, 0, 0, 0.15);
   -moz-box-shadow: 0 5px 65px 0 rgba(0, 0, 0, 0.15);
   -webkit-box-shadow: 0 5px 65px 0 rgba(0, 0, 0, 0.15);
@@ -910,7 +910,7 @@ h3 {
 }
 .header-nav-2.navbar-home .navbar-header a img {
   height: 64px;
-  padding: 17px;
+  padding: 0px; /*當網頁往下拉時，左上角logo的外框*/
 }
 .header-nav-2.navbar-home .navbar-header a span {
   padding: 0px;
@@ -1706,7 +1706,7 @@ footer .footer-body .logo img {
   margin: auto;
   margin-bottom: 30px;
   display: initial;
-  padding: 15px;
+  padding: 0px; /*最底logo外邊*/
   background-color: #B7B7B7;
 }
 footer .footer-body .copyright p .fa {
