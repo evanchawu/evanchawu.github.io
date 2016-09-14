@@ -5,7 +5,7 @@
     <source src="video/event-video.webm" type="video/webm"/>
 </video> -->
 
-<%= video_tag("event-video.mp4", autoplay: true, loop: true, class: "fillWidth background-video") %>
+<%= video_tag("event-video.mp4", autoplay: true, loop: true, id:"background-video", class: "fillWidth background-video") %>
     
 <div class="poster hidden">
     <img src="video/event-video.jpg" alt="event video poster">
@@ -88,9 +88,8 @@
 
                 <!-- button -->
                 <div class="btn-scroll-2 wow fadeInDown" data-wow-delay="1s">
-                    <a class="btn-down-chack btn btn-1" href="#partner">
-                    <%= image_tag("down.png") %> 
-                    <!-- <img src="images/down.png" alt=""> -->
+                    <a class="btn-down-chack btn " >
+                        <i id="player_icon" class="fa fa-pause fa-2x" aria-hidden="true"></i>
                     </a>
                 </div>
 

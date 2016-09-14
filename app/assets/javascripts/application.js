@@ -30,3 +30,4 @@
 //= require Finiti/animated-headline.js
 //= require Finiti/custom-scripts-3
 //= require type_form
+//= require play_pause
