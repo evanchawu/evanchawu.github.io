@@ -422,7 +422,7 @@ h3 {
   -webkit-font-smoothing: antialiased;
 }
 .btn-1 {
-  border: 1px solid #fff;
+  border: 1px solid #fff; /*參賽的按鈕外框*/
   color: #fff;
   border-radius: 0 0 0 0;
   -webkit-border-radius: 0 0 0 0;
@@ -430,6 +430,10 @@ h3 {
   -ms-border-radius: 0 0 0 0;
   -o-border-radius: 0 0 0 0;
 }
+.btn-1:hover {
+  border: 1px solid #000000; /*參賽的按鈕外框 滑鼠移過去變黑色*/
+}
+
 /* Slide Effect [ Left and Right] */
 .btn-left,
 .btn-top {
@@ -445,7 +449,7 @@ h3 {
   height: 0;
   top: 0;
   left: 0;
-  background: #fff;
+  background: #000000; /*滑鼠過去 參賽按鈕變黑色*/
 }
 .btn-top:hover,
 .btn-top:active,
