@@ -1,29 +1,33 @@
 <!DOCTYPE html>
 <html>
-    <meta charset="utf-8">
-    <meta name="description" content="台灣 街頭健身 比賽 囡仔 " />
-    <meta name="keywords" content="台灣, 街頭健身, 比賽, 囡仔, 地方動員, streetworkout, Street-Workout Taiwan Union, calisthenic" />
-    <meta name="author" content="囡仔">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <head lang="en">
+    <head>
+      <meta charset="utf-8">
+      <meta name="description" content="台灣 街頭健身 比賽 囡仔 " />
+      <meta name="author" content="囡仔">
+      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+      <meta name="keywords" content="台灣, 街頭健身, 比賽, 囡仔, 地方動員, streetworkout, Street-Workout Taiwan Union, calisthenic" />
 
-    <!-- TITLE OF SITE -->
-    <title> 囡仔 | Street-Workout Taiwan Union </title>
-    <%= csrf_meta_tags %>
+      <!-- TITLE OF SITE -->
+      <title> 囡仔 | Street-Workout Taiwan Union </title>
+      <%= csrf_meta_tags %>
+      
+      <!-- CSS -->
+      <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800">
+    </head>
+    
+    <body>
+      <%= yield %>
 
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+      <!-- for devise -->
+      <p class="notice"><%= notice %></p>
+      <p class="alert"><%= alert %></p>
 
-	</head>
-  <body>
-    <%= yield %>
-
-    <!-- for devise -->
-    <p class="notice"><%= notice %></p>
-    <p class="alert"><%= alert %></p>
-
-    <script src="https://code.jquery.com/jquery-2.2.4.min.js"   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="   crossorigin="anonymous"></script>  
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCXtKPN-097FWbfneioTa23SpRO-mEdfAs"></script>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-  </body>
+      <!-- JS -->
+      <script src="https://code.jquery.com/jquery-2.2.4.min.js"   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="   crossorigin="anonymous"></script>  
+      <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCXtKPN-097FWbfneioTa23SpRO-mEdfAs"></script>
+      <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    </body>
 </html>
