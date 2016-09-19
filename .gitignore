@@ -19,4 +19,5 @@
 # hide setting file
 /config/*.yml
 /public/uploads/*
+public/assets/ # precompile的檔案
 /config/deploy.rb
