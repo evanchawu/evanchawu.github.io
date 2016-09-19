@@ -287,7 +287,7 @@ h3 {
   -ms-transform: translate(-50%, 0);
   -o-transform: translate(-50%, 0);
   transform: translate(-50%, 0);
-  background: url(../video/event-video.jpg) no-repeat;
+  background-image: image-url("event-video.jpg") no-repeat;
   background-size: cover;
 }
 /**
