@@ -146,7 +146,7 @@
   }
   .header-nav-2 .navbar-header a img {
     height: 52px;
-    padding: 14px;
+    padding: 0px;
     position: relative;
     z-index: 3;
   }
@@ -174,7 +174,7 @@
   }
   .header-nav-2.navbar-home .navbar-header a img {
     height: 52px;
-    padding: 17px;
+    padding: 0px;
   }
   .header-nav-2.navbar-home .nav {
     margin-top: 20px !important;
