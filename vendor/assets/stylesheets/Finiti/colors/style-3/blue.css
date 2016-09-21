@@ -89,11 +89,12 @@ p {
   border-color: #FF4F00 !important;
 }
 .contact-maps-box .btn:after {
-  background: #FF4F00;
+  background-color: transparent !important;
+  outline: 0 !important;
 }
 .contact-maps-box .btn:hover,
 .contact-maps-box .btn:focus {
-  color: #FF4F00;
+  color: #FFFFFF;
 }
 /**
  * ======================================
