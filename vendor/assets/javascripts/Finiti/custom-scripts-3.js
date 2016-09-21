@@ -478,33 +478,33 @@ $(function() {
      * Contact Form 
      * ====================================
      */
-    $("#contact").submit(function(e) {
-        e.preventDefault();
-        var data = {
-            name: $("#contact-name").val(),
-            email: $("#contact-email").val(),
-            message: $("#contact-message").val()
-        };
+    // $("#contact").submit(function(e) {
+    //     e.preventDefault();
+    //     var data = {
+    //         name: $("#contact-name").val(),
+    //         email: $("#contact-email").val(),
+    //         message: $("#contact-message").val()
+    //     };
 
         
 
-        if ( isValidEmail(data['email']) && (data['message'].length > 1) && (data['name'].length > 1) ) {
-            $.ajax({
-                type: "POST",
-                url: "sendmail.php",
-                data: data,
-                success: function() {
-                    $('.email-success').delay(500).fadeIn(1000);
-                    $('.email-failed').fadeOut(500);
-                }
-            });
-        } else {
-            $('.email-failed').delay(500).fadeIn(1000);
-            $('.email-success').fadeOut(500);
-        }
+    //     if ( isValidEmail(data['email']) && (data['message'].length > 1) && (data['name'].length > 1) ) {
+    //         $.ajax({
+    //             type: "POST",
+    //             url: "sendmail.php",
+    //             data: data,
+    //             success: fu
+    //                 $('.email-success').delay(500).fadeIn(1000);
+    //                 $('.email-failed').fadeOut(500);
+    //             }
+    //         });
+    //     } else {
+    //         $('.email-failed').delay(500).fadeIn(1000);
+    //         $('.email-success').fadeOut(500);
+    //     }
 
-        return false;
-    });
+    //     return false;
+    // });
 
 
 
