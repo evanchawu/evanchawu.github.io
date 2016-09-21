@@ -32,3 +32,5 @@
 //= require type_form
 //= require play_pause
 //= require contact
+//= require Google_ga
+
