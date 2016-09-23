@@ -1,6 +1,15 @@
 class ApplicationController < ActionController::Base
-  protect_from_forgery with: :exception
+  before_action :authenticate
   before_action :ensure_signup_complete, only: [:new, :create, :update, :destroy]
+  protect_from_forgery with: :exception
+  require 'digest'
+
+  def authenticate
+    authenticate_or_request_with_http_basic('Administration') do |username, password|
+      md5_of_password = Digest::MD5.hexdigest(password)
+      username == 'admin' && md5_of_password == '7df27de84ed79a46d75c7c57ad00f76f'
+    end
+  end
 
   def ensure_signup_complete
     # Ensure we don't go into an infinite loop
