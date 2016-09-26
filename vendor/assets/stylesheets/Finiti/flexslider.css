@@ -18,7 +18,7 @@ http://www.freshdesignweb.com/fashion-responsive-slider-tutorial.html
 *********************************/ 
 .flexslider {width: 100%; margin: 0;}
 .flexslider .slides > li {display: none;} /* Hide the slides before the JS is loaded. Avoids image jumping */
-.flexslider .slides img {min-width: 100%; min-height: 100%; display: block; border:0px #ededed solid;opacity: 0.9;}
+.flexslider .slides img {/*min-width: 100%; min-height: 100%;*/ height: 100%; width: auto; display: block; border:0px #ededed solid;opacity: 0.9;}
 .flex-pauseplay span {text-transform: capitalize;}
 .slides:after {content: "."; display: block; clear: both; visibility: hidden; line-height: 0; height: 0;} 
 html[xmlns] .slides {display: block;} 
