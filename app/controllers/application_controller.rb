@@ -1,5 +1,5 @@
 class ApplicationController < ActionController::Base
-  before_action :authenticate
+  # before_action :authenticate
   before_action :ensure_signup_complete, only: [:new, :create, :update, :destroy]
   protect_from_forgery with: :exception
   require 'digest'
