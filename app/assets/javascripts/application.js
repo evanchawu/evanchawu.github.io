@@ -33,4 +33,5 @@
 //= require play_pause
 //= require contact
 //= require Google_ga
+//= require Zopim
 
