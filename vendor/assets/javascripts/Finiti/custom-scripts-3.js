@@ -365,7 +365,7 @@ $(function() {
         }
     });
     $('.count_down-2').countdown({
-        end_time: "2016/10/21 14:27:28 +0600",
+        end_time: "2016/12/17 00:09:00 +0800", //結束時間 - 比賽時間2016/12/17 
         wrapper: function(unit){
             var wrpr = $('<div></div>').
                 addClass(unit.toLowerCase()+'_wrapper').
