@@ -14,7 +14,7 @@ p {
   color: #666666;
 }
 .overlay-color {
-  background-color: rgba(17, 17, 17, 0.5);
+  background-color: rgba(17, 17, 17, 0.8); /*濾層*/
 }
 .section-heading:after {
   background-color: #FF4F00;
@@ -227,7 +227,8 @@ p {
  * ==================================
  */
 .grid figure figcaption {
-  background: rgba(0, 155, 235, 0.69);
+  background: #FF4F00; /*成員遮罩顏色*/
+  opacity: 0.8;
 }
 .grid figure figcaption a:hover,
 .grid figure figcaption a:focus {
