@@ -8,30 +8,6 @@
             <div class="section-header col-md-6 col-md-offset-3">
 
                 <h2 class="section-heading">賽程資訊</h2>
-                <p>
-
-<!--                 *免費入場觀賽<br><br>
-
-                報名時間：10/14-11/14<br>
-                報名費：免費，每人限報兩組<br>
-                比賽地點：新北市永和區福和河濱公園<br>
-                主辦單位：囡仔街頭健身、四福單槓團<br>
-                活動日期：比賽時間：12/17(六) 9:00-12:30<br>
-                參賽對象：凡中華民國國民，不分性別、年齡皆可參加<br><br>
-
-                比賽項目：<br>
-                I.         徒手Dip&nbsp;&nbsp;
-                II.        負重Dip&nbsp;&nbsp;
-                III.       徒手Pull up&nbsp;&nbsp;
-                IV.        負重Pull up<br><br>
-
-                各組獎項：<br>
-                (共四組，總獎金四千元) <br>
-                第一名 500元&nbsp;&nbsp;
-                第二名 300元&nbsp;&nbsp;
-                第三名 200元<br><br> -->
-                 
-                </p>
 
             </div>
 
@@ -63,13 +39,13 @@
                             <!-- Nav tabs -->
                             <ul class="schedule-hall nav" role="tablist">
                                 <li role="presentation" class="btn-group active">
-                                    <a class="btn-bottom" href="#hall-1-1" aria-controls="hall-1-1" role="tab" data-toggle="tab">比賽資訊</a>
+                                    <a class="btn-bottom" href="#hall-1-1" aria-controls="hall-1-1" role="tab" data-toggle="tab">報名資訊</a>
                                 </li>
                                 <li role="presentation" class="btn-group">
-                                    <a class="btn-bottom" href="#hall-2-1" aria-controls="hall-2-1" role="tab" data-toggle="tab">比賽項目</a>
+                                    <a class="btn-bottom" href="#hall-2-1" aria-controls="hall-2-1" role="tab" data-toggle="tab">比賽辦法</a>
                                 </li>
                                 <li role="presentation" class="btn-group">
-                                    <a class="btn-bottom" href="#hall-3-1" aria-controls="hall-3-1" role="tab" data-toggle="tab">獎金</a>
+                                    <a class="btn-bottom" href="#hall-3-1" aria-controls="hall-3-1" role="tab" data-toggle="tab">比賽流程</a>
                                 </li>
                             </ul>
 
@@ -77,424 +53,85 @@
 
                         <div class="clearfix"></div>
 
-                        <!-- Start: 1st day .tab-content -->
+                        <!-- Start: 比賽流程 .tab-content -->
                         <div class="tab-content ">
 
-                            <!-- 1st hall -->
+
+                            <!-- 3rd hall -->
                             <div class="tab-pane schedule-hall-detail active" id="hall-1-1">
                                 <div class="collapse-tab schedule-hall">
                                     <div class="panel-group" id="accordion-1-1">
                                         <span class="line-h"></span>
 
-                                        <!-- Start: Tab-1 -->
-                                        <div class="panel panel-default" id="hall-1-1-panel-1">
-                                            <div class="panel-heading">
-                                                <h4 class="panel-title">
 
-                                                    <!-- Tab-1 Title Goes Here  -->
-                                                    <a data-toggle="collapse" data-parent="#accordion-1-1" href="#hall-1-1-collapseOne" class="" aria-expanded="true">
-                                                        <span class="detail col-sm-9">
-                                                            <span class="headline">The Future of the Web</span>
-                                                            <span class="name">Anjel Gorina</span>
-                                                            <span class="company ">CEO, DeviserWeb</span>
-                                                        </span>
-                                                        <span class="time col-sm-3">
-                                                            <span class="show-time">10:30 AM - 12:00 PM</span>
-                                                            <span class="collapse-icon"><i class="fa fa-angle-down"></i></span>
-                                                        </span>
-                                                    </a>
+                                        <!-- Start item -->
+                                        <%= render partial: "schedule_area_tab", 
+                                                   locals: {movement: "報名時間：", 
+                                                            time_per_person: "10/14-11/14", 
+                                                            duration: ""} %>
+                                        <!-- End item   -->
 
-                                                </h4>
-                                            </div>
-                                            <div class="clearfix"></div>
-                                            <div id="hall-1-1-collapseOne" class="panel-collapse collapse">
+                                        <!-- Start item -->
+                                        <%= render partial: "schedule_area_tab", 
+                                                   locals: {movement: "報名費用：", 
+                                                            time_per_person: "免費，每人限報兩組", 
+                                                            duration: ""} %>
+                                        <!-- End item   -->
+                                        
+                                        <!-- Start item -->
+                                        <%= render partial: "schedule_area_tab", 
+                                                   locals: {movement: "比賽地點：", 
+                                                            time_per_person: "新北市永和區福和河濱公園", 
+                                                            duration: ""} %>
+                                        <!-- End item   -->
+                                        
+                                        <!-- Start item -->
+                                        <%= render partial: "schedule_area_tab", 
+                                                   locals: {movement: "主辦單位：", 
+                                                            time_per_person: "囡仔街頭健身、四福單槓團", 
+                                                            duration: ""} %>
+                                        <!-- End item   -->
+                                        
+                                        <!-- Start item -->
+                                        <%= render partial: "schedule_area_tab", 
+                                                   locals: {movement: "活動日期：", 
+                                                            time_per_person: "比賽時間：12/17(六) 9:00-12:30", 
+                                                            duration: ""} %>
+                                        <!-- End item   -->
+                                        
+                                        <!-- Start item -->
+                                        <%= render partial: "schedule_area_tab", 
+                                                   locals: {movement: "參賽對象：", 
+                                                            time_per_person: "不分性別、年齡皆可參加", 
+                                                            duration: ""} %>
+                                        <!-- End item   -->
+                                        
+                                        <!-- Start item -->
+                                        <%= render partial: "schedule_area_tab", 
+                                                   locals: {movement: "比賽項目：", 
+                                                            time_per_person: "
+                                                                    I.徒手Dip <br />
+                                                                    
+                                                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;II.        負重Dip<br />
 
-                                                <!-- Tab-1 Detail Goes Here  -->
-                                                <div class="panel-body">
-                                                    <div class="row">
-                                                        <div class="col-lg-2 col-md-2 col-sm-2">
-                                                            <%= image_tag("speakers-img/1.jpg", class: "img-responsive") %>
-                                                        </div>
-                                                        <div class="col-lg-7 col-md-7 col-sm-12">
-                                                            <h4>The Future of the Web</h4>
-                                                            <p>Event landing Sed facilisis justo vitae risus viverra vulputate. Finiti ipsum dignissim diam viverra condimentum. Donec sodales, diam eget mattis condimentum, quam neque tempus purus, event landing dictum viverra risus nisl quis metus.</p>
-                                                            <ul class="nav navbar-left">
-                                                                <li><span class="small time">2hour</span></li>
-                                                                <li><span class="small position">Beginner</span></li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                </div>
+                                                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;III.       徒手Pull up<br />
 
-                                            </div>
-                                        </div>
-                                        <!-- End: Tab-1 -->
+                                                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;IV.        負重Pull up<br>
+                                                            ".html_safe, 
+                                                            duration: ""} %>
+                                        <!-- End item   -->
 
-
-                                        <!-- Start: Break Time -->
-                                  <!--       <div class="panel panel-default">
-                                            <div class="panel-heading">
-                                                <h4 class="panel-title">
- -->
-                                                    <!-- Tab-1 Title Goes Here  -->
-                        <!--                             <span class="panel-title-a">
-                                                        <span class="detail col-sm-9">
-                                                            <span class="headline">Lunch Brack</span>
-                                                        </span>
-                                                        <span class="time col-sm-3">
-                                                            <span class="show-time">12:00 PM - 12:30 PM</span>
-                                                            <span class="collapse-icon"></span>
-                                                        </span>
-                                                    </span>
-
-                                                </h4>
-                                            </div>
-                                        </div> -->
-                                        <!-- End: Break Time -->
-
-
-                                        <!-- Start: Tab-2 -->
-                                        <div class="panel panel-default" id="hall-1-1-panel-2">
-                                            <div class="panel-heading">
-                                                <h4 class="panel-title">
-
-                                                    <!-- Tab-1 Title Goes Here  -->
-                                                    <a data-toggle="collapse" data-parent="#accordion-1-1" href="#hall-1-1-collapseTwo" class="" aria-expanded="false">
-                                                        <span class="detail col-sm-9">
-                                                            <span class="headline">Improving Wordpress</span>
-                                                            <span class="name">David Jones</span>
-                                                            <span class="company">CEO, DeviserWeb.</span>
-                                                        </span>
-                                                        <span class="time col-sm-3">
-                                                            <span class="show-time">10:30 AM - 12:00 PM</span>
-                                                            <span class="collapse-icon"><i class="fa fa-angle-down"></i></span>
-                                                        </span>
-                                                    </a>
-
-                                                </h4>
-                                            </div>
-                                            <div class="clearfix"></div>
-                                            <div id="hall-1-1-collapseTwo" class="panel-collapse collapse">
-
-                                                <!-- Tab-2 Detail Goes Here  -->
-                                                <div class="panel-body">
-                                                    <div class="row">
-                                                        <div class="col-lg-2 col-md-2 col-sm-2">
-                                                        <%= image_tag("speakers-img/2.jpg", class: "img-responsive") %>
-                                                        </div>
-                                                        <div class="col-lg-7 col-md-7 col-sm-12">
-                                                            <h4>Improving Wordpress</h4>
-                                                            <p>Event landing Sed facilisis justo vitae risus viverra vulputate. Finiti ipsum dignissim diam viverra condimentum. Donec sodales, diam eget mattis condimentum, quam neque tempus purus, event landing dictum viverra risus nisl quis metus.</p>
-                                                            <ul class="nav navbar-left">
-                                                                <li><span class="small time">2hour</span></li>
-                                                                <li><span class="small position">Beginner</span></li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-                                            </div>
-                                        </div>
-                                        <!-- End: Tab-2 -->
-
-
-                                        <!-- Start: Tab-3 -->
-                                        <div class="panel panel-default" id="hall-1-1-panel-3">
-                                            <div class="panel-heading">
-                                                <h4 class="panel-title">
-
-                                                    <!-- Tab-3 Title Goes Here  -->
-                                                    <a data-toggle="collapse" data-parent="#accordion-1-1" href="#hall-1-1-collapseThree" class="" aria-expanded="false">
-                                                        <span class="detail col-sm-9">
-                                                            <span class="headline">Dance With Code</span>
-                                                            <span class="name">Kulsum Doe</span>
-                                                            <span class="company">CEO, DeviserWeb.</span>
-                                                        </span>
-                                                        <span class="time col-sm-3">
-                                                            <span class="show-time">10:30 PM - 12:00 PM</span>
-                                                            <span class="collapse-icon"><i class="fa fa-angle-down"></i></span>
-                                                        </span>
-                                                    </a>
-
-                                                </h4>
-                                            </div>
-                                            <div class="clearfix"></div>
-                                            <div id="hall-1-1-collapseThree" class="panel-collapse collapse">
-
-                                                <!-- Tab-3 Detail Goes Here  -->
-                                                <div class="panel-body">
-                                                   <div class="row">
-                                                        <div class="col-lg-2 col-md-2 col-sm-2">
-                                                            <%= image_tag("speakers-img/1.jpg", class: "img-responsive") %>
-                                                        </div>
-                                                        <div class="col-lg-7 col-md-7 col-sm-12">
-                                                            <h4>Dance With Code</h4>
-                                                            <p>Event landing Sed facilisis justo vitae risus viverra vulputate. Finiti ipsum dignissim diam viverra condimentum. Donec sodales, diam eget mattis condimentum, quam neque tempus purus, event landing dictum viverra risus nisl quis metus.</p>
-                                                            <ul class="nav navbar-left">
-                                                                <li><span class="small time">2hour</span></li>
-                                                                <li><span class="small position">Beginner</span></li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-                                            </div>
-                                        </div>
-                                        <!-- End: Tab-3 -->
-
-
-                                    </div> <!-- End: .panel-group  -->
-                                </div><!--  End: tab  -->
-
-                            </div>
-                            <!-- End: 1st holl -->
-
-                            <!-- 2nd hall -->
-                            <div class="tab-pane schedule-hall-detail" id="hall-2-1">
-                                <div class="collapse-tab schedule-hall">
-                                    <div class="panel-group" id="accordion-2-1">
-                                        <span class="line-h"></span>
-
-
-                                        <!-- Start: Tab-1 -->
-                                        <div class="panel panel-default" id="hall-2-1-panel-1">
-                                            <div class="panel-heading">
-                                                <h4 class="panel-title">
-
-                                                    <!-- Tab-1 Title Goes Here  -->
-                                                    <a data-toggle="collapse" data-parent="#accordion-2-1" href="#hall-2-1-collapseOne" class="" aria-expanded="true">
-                                                        <span class="detail col-sm-9">
-                                                            <span class="headline">Less Motivation</span>
-                                                            <span class="name">Anjel Gorina</span>
-                                                            <span class="company ">CEO, DeviserWeb</span>
-                                                        </span>
-              <!--                                           <span class="time col-sm-3">
-                                                            <span class="show-time">10:30 AM - 12:00 PM</span>
-                                                            <span class="collapse-icon"><i class="fa fa-angle-down"></i></span>
-                                                        </span> -->
-                                                    </a>
-
-                                                </h4>
-                                            </div>
-                                            <div class="clearfix"></div>
-                                            <div id="hall-2-1-collapseOne" class="panel-collapse collapse">
-
-                                                <!-- Tab-1 Detail Goes Here  -->
-                                                <div class="panel-body">
-                                                    <div class="row">
-                                                        <div class="col-lg-2 col-md-2 col-sm-2">
-                                                            <%= image_tag("speakers-img/1.jpg", class: "img-responsive") %>
-                                                        </div>
-                                                        <div class="col-lg-7 col-md-7 col-sm-12">
-                                                            <h4>Less Motivation</h4>
-                                                            <p>Event landing Sed facilisis justo vitae risus viverra vulputate. Finiti ipsum dignissim diam viverra condimentum. Donec sodales, diam eget mattis condimentum, quam neque tempus purus, event landing dictum viverra risus nisl quis metus.</p>
-
-                                                            <ul class="nav navbar-left">
-                                                                <li><span class="small time">2hour</span></li>
-                                                                <li><span class="small position">Beginner</span></li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-                                            </div>
-                                        </div>
-                                        <!-- End: Tab-1 -->
-
-
-                                        <!-- Start: Break Time -->
-                             <!--            <div class="panel panel-default">
-                                            <div class="panel-heading">
-                                                <h4 class="panel-title"> -->
-
-                                                    <!-- Tab-1 Title Goes Here  -->
-                        <!--                             <span class="panel-title-a">
-                                                        <span class="detail col-sm-9">
-                                                            <span class="headline">Lunch Brack</span>
-                                                        </span>
-                                                        <span class="time col-sm-3">
-                                                            <span class="show-time">12:00 PM - 12:30 PM</span>
-                                                            <span class="collapse-icon"></span>
-                                                        </span>
-                                                    </span>
-
-                                                </h4>
-                                            </div>
-                                        </div> -->
-                                        <!-- End: Break Time -->
-
-
-                                        <!-- Start: Tab-2 -->
-                                        <div class="panel panel-default" id="hall-2-1-panel-2">
-                                            <div class="panel-heading">
-                                                <h4 class="panel-title">
-
-                                                    <!-- Tab-1 Title Goes Here  -->
-                                                    <a data-toggle="collapse" data-parent="#accordion-2-1" href="#hall-2-1-collapseTwo" class="" aria-expanded="false">
-                                                        <span class="detail col-sm-9">
-                                                            <span class="headline">Less Motivation</span>
-                                                            <span class="name">David Jones</span>
-                                                            <span class="company">CEO, DeviserWeb.</span>
-                                                        </span>
-                                                    <!--     <span class="time col-sm-3">
-                                                            <span class="show-time">10:30 AM - 12:00 PM</span>
-                                                            <span class="collapse-icon"><i class="fa fa-angle-down"></i></span>
-                                                        </span> -->
-                                                    </a>
-
-                                                </h4>
-                                            </div>
-                                            <div class="clearfix"></div>
-                                            <div id="hall-2-1-collapseTwo" class="panel-collapse collapse">
-
-                                                <!-- Tab-2 Detail Goes Here  -->
-                                                <div class="panel-body">
-                                                    <div class="row">
-                                                        <div class="col-lg-2 col-md-2 col-sm-2">
-                                                            <%= image_tag("speakers-img/2.jpg", class: "img-responsive") %>
-                                                        </div>
-                                                        <div class="col-lg-7 col-md-7 col-sm-12">
-                                                            <h4>Less Motivation</h4>
-                                                            <p>Event landing Sed facilisis justo vitae risus viverra vulputate. Finiti ipsum dignissim diam viverra condimentum. Donec sodales, diam eget mattis condimentum, quam neque tempus purus, event landing dictum viverra risus nisl quis metus.</p>
-                                                            <ul class="nav navbar-left">
-                                                                <li><span class="small time">2hour</span></li>
-                                                                <li><span class="small position">Beginner</span></li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-                                            </div>
-                                        </div>
-                                        <!-- End: Tab-2 -->
-
-
-                                    </div> <!-- End: .panel-group  -->
-                                </div><!--  End: tab  -->
-                            </div>
-                            <!-- End: 2rd holl -->
-
-
-                            <!-- 3rd hall -->
-                            <div class="tab-pane schedule-hall-detail" id="hall-3-1">
-                                <div class="collapse-tab schedule-hall">
-                                    <div class="panel-group" id="accordion-3-1">
-                                        <span class="line-h"></span>
-
-
-                                        <!-- Start: Tab-1 -->
-                                        <div class="panel panel-default" id="hall-3-1-panel-1">
-                                            <div class="panel-heading">
-                                                <h4 class="panel-title">
-
-                                                    <!-- Tab-1 Title Goes Here  -->
-                                                    <a data-toggle="collapse" data-parent="#accordion-3-1" href="#hall-3-1-collapseOne" class="" aria-expanded="true">
-                                                        <span class="detail col-sm-9">
-                                                            <span class="headline">Less Motivation</span>
-                                                            <span class="name">Anjel Gorina</span>
-                                                            <span class="company ">CEO, DeviserWeb</span>
-                                                        </span>
-                                                        <!-- <span class="time col-sm-3">
-                                                            <span class="show-time">10:30 AM - 12:00 PM</span>
-                                                            <span class="collapse-icon"><i class="fa fa-angle-down"></i></span>
-                                                        </span> -->
-                                                    </a>
-
-                                                </h4>
-                                            </div>
-                                            <div class="clearfix"></div>
-                                            <div id="hall-3-1-collapseOne" class="panel-collapse collapse">
-
-                                                <!-- Tab-1 Detail Goes Here  -->
-                                                <div class="panel-body">
-                                                    <div class="row">
-                                                        <div class="col-lg-2 col-md-2 col-sm-2">
-                                                            <%= image_tag("speakers-img/1.jpg", class: "img-responsive") %>
-                                                        </div>
-                                                        <div class="col-lg-7 col-md-7 col-sm-12">
-                                                            <h4>Less Motivation</h4>
-                                                            <p>Event landing Sed facilisis justo vitae risus viverra vulputate. Finiti ipsum dignissim diam viverra condimentum. Donec sodales, diam eget mattis condimentum, quam neque tempus purus, event landing dictum viverra risus nisl quis metus.</p>
-
-                                                            <ul class="nav navbar-left">
-                                                                <li><span class="small time">2hour</span></li>
-                                                                <li><span class="small position">Beginner</span></li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-                                            </div>
-                                        </div>
-                                        <!-- End: Tab-1 -->
-
-
-                                        <!-- Start: Break Time -->
-                                        <div class="panel panel-default" >
-                                            <div class="panel-heading">
-                                                <h4 class="panel-title">
-
-                                                    <!-- Tab-1 Title Goes Here  -->
-                                                <!--     <span class="panel-title-a">
-                                                        <span class="detail col-sm-9">
-                                                            <span class="headline">Lunch Brack</span>
-                                                        </span>
-                                                        <span class="time col-sm-3">
-                                                            <span class="show-time">12:00 PM - 12:30 PM</span>
-                                                            <span class="collapse-icon"></span>
-                                                        </span>
-                                                    </span> -->
-
-                                                </h4>
-                                            </div>
-                                        </div>
-                                        <!-- End: Break Time -->
-
-
-                                        <!-- Start: Tab-2 -->
-                                        <div class="panel panel-default" id="hall-3-1-panel-2">
-                                            <div class="panel-heading">
-                                                <h4 class="panel-title">
-
-                                                    <!-- Tab-1 Title Goes Here  -->
-                                                    <a data-toggle="collapse" data-parent="#accordion-3-1" href="#hall-3-1-collapseTwo" class="" aria-expanded="false">
-                                                        <span class="detail col-sm-9">
-                                                            <span class="headline">Less Motivation</span>
-                                                            <span class="name">David Jones</span>
-                                                            <span class="company">CEO, DeviserWeb.</span>
-                                                        </span>
-                                                    <!--     <span class="time col-sm-3">
-                                                            <span class="show-time">10:30 AM - 12:00 PM</span>
-                                                            <span class="collapse-icon"><i class="fa fa-angle-down"></i></span>
-                                                        </span> -->
-                                                    </a>
-
-                                                </h4>
-                                            </div>
-                                            <div class="clearfix"></div>
-                                            <div id="hall-3-1-collapseTwo" class="panel-collapse collapse">
-
-                                                <!-- Tab-2 Detail Goes Here  -->
-                                                <div class="panel-body">
-                                                    <div class="row">
-                                                        <div class="col-lg-2 col-md-2 col-sm-2">
-                                                            <%= image_tag("speakers-img/2.jpg", class: "img-responsive") %>
-                                                        </div>
-                                                        <div class="col-lg-7 col-md-7 col-sm-12">
-                                                            <h4>Less Motivation</h4>
-                                                            <p>Event landing Sed facilisis justo vitae risus viverra vulputate. Finiti ipsum dignissim diam viverra condimentum. Donec sodales, diam eget mattis condimentum, quam neque tempus purus, event landing dictum viverra risus nisl quis metus.</p>
-
-                                                            <ul class="nav navbar-left">
-                                                                <li><span class="small time">2hour</span></li>
-                                                                <li><span class="small position">Beginner</span></li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-                                            </div>
-                                        </div>
-                                        <!-- End: Tab-2 -->
-
+                                        <!-- Start item -->
+                                        <%= render partial: "schedule_area_tab", 
+                                                   locals: {movement: "各組獎項：", 
+                                                            time_per_person: "
+                                                                    第一名：500元，
+                                                                    第二名：300元，
+                                                                    第三名：200元。
+                                                                    （共四組，總獎金四千元）
+                                                            ".html_safe, 
+                                                            duration: ""} %>
+                                        <!-- End item   -->
 
                                     </div> <!-- End: .panel-group  -->
                                 </div><!--  End: tab  -->
@@ -502,334 +139,136 @@
                             <!-- End: 3rd holl -->
 
 
+                            <!-- 1st hall -->
+                            <div class="tab-pane schedule-hall-detail " id="hall-3-1">
+                                <div class="collapse-tab schedule-hall">
+                                    <div class="panel-group" id="accordion-3-1">
+                                        <span class="line-h"></span>
+
+                                        <!-- item -->
+                                        <%= render partial: "schedule_area_tab", 
+                                                   locals: {movement: "徒手引體向上", 
+                                                            time_per_person: "(每人2.5分鐘)", 
+                                                            duration: "9:30 AM - 10:00 AM"} %>
+        
+                                        <!-- item -->
+                                        <%= render partial: "schedule_area_tab", 
+                                                   locals: {movement: "徒手雙槓撐體", 
+                                                            time_per_person: "(每人2.5分鐘)", 
+                                                            duration: "10:00 AM - 10:30 AM"} %>                                   
+                                        <!-- item -->
+                                        <%= render partial: "schedule_area_tab", 
+                                                   locals: {movement: "Break time", 
+                                                            time_per_person: "", 
+                                                            duration: "10:30 AM - 10:40 AM"} %>
+
+                                        <!-- item -->
+                                        <%= render partial: "schedule_area_tab", 
+                                                   locals: {movement: "負重引體向上", 
+                                                            time_per_person: "(每人40秒*3輪)*10", 
+                                                            duration: "10:40 AM - 11:20 AM"} %>
+                                                                                
+                                        <!-- item -->
+                                        <%= render partial: "schedule_area_tab", 
+                                                   locals: {movement: "負重雙槓撐體", 
+                                                            time_per_person: "(每人40秒*3輪)*10", 
+                                                            duration: "11:20 AM - 12:00 AM"} %>
+                                        <!-- item -->
+                                        <%= render partial: "schedule_area_tab", 
+                                                   locals: {movement: "最後加賽", 
+                                                            time_per_person: "", 
+                                                            duration: "11:20 AM - 12:00 AM"} %>
+                                        <!-- item -->
+                                        <%= render partial: "schedule_area_tab", 
+                                                   locals: {movement: "閉幕頒獎", 
+                                                            time_per_person: "", 
+                                                            duration: "12:10 AM - 12:30 AM"} %>
+
+                                    </div> <!-- End: .panel-group  -->
+                                </div><!--  End: tab  -->
+
+                            </div>
+                            <!-- End: 比賽流程 -->
+
+                            <!-- Start 比賽辦法 -->
+                            <div class="tab-pane schedule-hall-detail" id="hall-2-1">
+                                <div class="collapse-tab schedule-hall">
+                                    <div class="panel-group" id="accordion-2-1">
+                                        <span class="line-h"></span>
+
+                                        <!-- Start item -->
+                                        <%= render partial: "schedule_area_tab_full_width", 
+                                                   locals: {movement: "分組", 
+                                                            time_per_person: "
+                                                                                                    <br />
+                                                            不分年齡、體重、性別．．．等差異進行比賽。<br />
+                                                            組別有徒手引體向上、徒手雙槓撐體、負重引體向上、負重雙槓撐體，<strong>每人最多限報名兩組。</strong>  <br /><br />
+
+                                                            徒手項目(徒手引體向上、徒手雙槓撐體) <br />   
+                                                             各項目依照電腦亂數決定先後順序，共計10人依序出賽。若唱名3次未到場者，則取消資格。<br />
+
+                                                            負重項目(負重引體向上、負重雙槓撐體) <br />
+                                                            每位參賽者共有三輪出賽機會(每輪各進行一次嘗試，共三輪。參賽者各輪賽前請填妥欲嘗試的重量(以1.25kg為倍數)，
+                                                            依照負重大小(由小至大)依序出賽，如遇同重量者，依電腦亂數所指定的順序(即當天的簽到表順序)出賽，共計10人。唱名3次未到者，取消資格。若該輪挑戰失敗後，次輪僅可使用相同重量再進行嘗試。".html_safe, 
+                                                            duration: ""} %>
+                                        <!-- End item   -->
+                                      
+                                        <!-- Start item -->
+                                        <%= render partial: "schedule_area_tab_full_width", 
+                                                   locals: {movement: "比賽規則", 
+                                                            time_per_person: "
+                                                            <br />
+                                                            （1）唱名三次未出現者取消資格 <br />
+                                                            （2）雙槓撐體:手的擺放位置為軀幹兩側 <br />
+                                                            （3）比賽辦法如有未盡事宜，得由承辦單位隨時修訂公佈之<br />
+                                                            （4）比賽過程中，不得有不雅言詞與手勢、禁止打鬥，否則終生取消資格<br />
+                                                            （5）各項競賽的最末下，允許下肢的擺動。意即<strong>一旦擺動，即終止該組嘗試 </strong><br />
+                                                            （6）引體向上:<strong>使用正手(掌心向槓)</strong>，手的擺放位置為1~1.5倍肩寬，由參賽者自行決定 <br />
+                                                            （7）雙槓撐體競賽(負重、徒手)，參賽者 <strong>須下放至手肘小於90度，並再度將手臂伸直</strong> ，即一次有效反覆 <br />
+                                                            （8）引體向上競賽(負重、徒手)，參賽者 <strong>須下巴過槓並下放至手肘伸直(但允許肩胛骨後收)</strong> ，即一次有效反覆 <br />
+                                                            （9）比賽有爭議時，以裁判判決為終決。如規則或本規程無明文規定之問題，則由審判委員會審定之，其判決為終結 <br />
+                                                            （10）比賽結果次數相同者，進行延長加賽；負重競賽成績相同者，以體重輕者獲勝(體重的裁決以參賽者當下過磅數字為準) <br />
+                                                            （11）比賽服裝不受限制，可打赤膊、使用護具，但手掌部分只得徒手或使用現場提供之止滑粉，不得有規則外之輔助物(黏性物) <br />   
+                                                            （12）單次準備時間為90秒(含穿戴負重物)，腳離地後再度著地為一次嘗試;引體向上<strong>不允許有單手懸吊的休息狀況</strong> ，若出現即視為一次嘗試
+                                                            ".html_safe, 
+                                                            duration: ""} %>
+                                        <!-- End item   -->
+
+
+                                        <!-- Start item -->
+                                        <%= render partial: "schedule_area_tab_full_width", 
+                                                   locals: {movement: "檢錄", 
+                                                            time_per_person: "
+                                                            <br />
+                                                            比賽順序：徒手引體向上、徒手雙槓撐體、負重引體向上、負重雙槓撐體。所有參賽選手一到比賽場地即到大會指定地點進行檢錄。比賽不接受現場報名。以身分證進行核對資格，並領取比賽上衣、選手證，方便裁判辨識用。檢錄完畢後請等待比賽唱名，每一項目比賽開始前都會點名，廣播三次不到者即以棄權論。
+                                                            ".html_safe, 
+                                                            duration: ""} %>
+                                        <!-- End item   -->
+
+
+
+                                        <!-- Start item -->
+                                        <%= render partial: "schedule_area_tab_full_width", 
+                                                   locals: {movement: "獎勵", 
+                                                            time_per_person: "<br /> 每組每項目成績排名後，取前三名給予獎狀；如欲平手者，待所有項目結束後，進行最終加賽，依序為：徒手引體向上、徒手雙槓撐體、負重引體向上、負重雙槓撐體。前三名者給予獎品(主辦單位有最終決定權)、獎金、獎狀，第一名獎金新台幣500元整、第二名獎金新台幣300元整、第三名獎金新台幣200元整。
+                                                            成績將紀錄於網站上供日後參考。
+                                                            若該組女性人數超過3人(含3人)，主辦單位可斟酌頒發獎勵給予該組成績第一名的女性參賽者。".html_safe, 
+                                                            duration: ""} %>
+                                        <!-- End item   -->
+
+                                    </div> <!-- End: .panel-group  -->
+                                </div><!--  End: tab  -->
+                            </div>
+                            <!-- End: End 比賽辦法 -->
+
+
+          
+
                         </div>
                         <!-- End: 1st day .tab-content -->
                     </div>
                     <!-- End: 1st Day -->
-
-                    <!-- Start: 2nd day -->
-                    <div class="tab-pane schedule-day-detail" id="day-2">
-                        <div class="link">
-
-                            <!-- Nav tabs -->
-                            <ul class="schedule-hall nav" role="tablist">
-                                <li role="presentation" class="btn-group active">
-                                    <a class="btn-bottom" href="#hall-1-2" aria-controls="hall-1-2" role="tab" data-toggle="tab">Hall 1</a>
-                                </li>
-                                <li role="presentation" class="btn-group">
-                                    <a class="btn-bottom" href="#hall-2-2" aria-controls="hall-2-2" role="tab" data-toggle="tab">Hall 2</a>
-                                </li>
-                            </ul>
-
-                        </div>
-
-                        <div class="clearfix"></div>
-
-                        <!-- Start: 2nd day .tab-content -->
-                        <div class="tab-content ">
-
-                            <!-- 1st hall -->
-                            <div class="tab-pane schedule-hall-detail active" id="hall-1-2">
-                                <div class="collapse-tab schedule-hall">
-                                    <div class="panel-group" id="accordion-1-2">
-                                        <span class="line-h"></span>
-
-                                        <!-- Start: Tab-1 -->
-                                        <div class="panel panel-default" id="hall-1-2-panel-1">
-                                            <div class="panel-heading">
-                                                <h4 class="panel-title">
-
-                                                    <!-- Tab-1 Title Goes Here  -->
-                                                    <a data-toggle="collapse" data-parent="#accordion-1-2" href="#hall-1-2-collapseOne" class="" aria-expanded="true">
-                                                        <span class="detail col-sm-9">
-                                                            <span class="headline">The Future of the Web</span>
-                                                            <span class="name">Anjel Gorina</span>
-                                                            <span class="company ">CEO, DeviserWeb</span>
-                                                        </span>
-                                                        <span class="time col-sm-3">
-                                                            <span class="show-time">10:30 AM - 12:00 PM</span>
-                                                            <span class="collapse-icon"><i class="fa fa-angle-down"></i></span>
-                                                        </span>
-                                                    </a>
-
-                                                </h4>
-                                            </div>
-                                            <div class="clearfix"></div>
-                                            <div id="hall-1-2-collapseOne" class="panel-collapse collapse">
-
-                                                <!-- Tab-1 Detail Goes Here  -->
-                                                <div class="panel-body">
-                                                    <div class="row">
-                                                        <div class="col-lg-2 col-md-2 col-sm-2">
-                                                            <%= image_tag("speakers-img/1.jpg", class: "img-responsive") %>
-                                                        </div>
-                                                        <div class="col-lg-7 col-md-7 col-sm-12">
-                                                            <h4>The Future of the Web</h4>
-                                                            <p>Event landing Sed facilisis justo vitae risus viverra vulputate. Finiti ipsum dignissim diam viverra condimentum. Donec sodales, diam eget mattis condimentum, quam neque tempus purus, event landing dictum viverra risus nisl quis metus.</p>
-                                                            <ul class="nav navbar-left">
-                                                                <li><span class="small time">2hour</span></li>
-                                                                <li><span class="small position">Beginner</span></li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-                                            </div>
-                                        </div>
-                                        <!-- End: Tab-1 -->
-
-                                        <!-- Start: Break Time -->
-                                        <div class="panel panel-default">
-                                            <div class="panel-heading">
-                                                <h4 class="panel-title">
-
-                                                    <!-- Tab-1 Title Goes Here  -->
-                                                    <span class="panel-title-a">
-                                                        <span class="detail col-sm-9">
-                                                            <span class="headline">Lunch Brack</span>
-                                                        </span>
-                                                        <span class="time col-sm-3">
-                                                            <span class="show-time">12:00 PM - 12:30 PM</span>
-                                                            <span class="collapse-icon"></span>
-                                                        </span>
-                                                    </span>
-
-                                                </h4>
-                                            </div>
-                                        </div>
-                                        <!-- End: Break Time -->
-
-                                        <!-- Start: Tab-2 -->
-                                        <div class="panel panel-default" id="hall-1-2-panel-2">
-                                            <div class="panel-heading">
-                                                <h4 class="panel-title">
-
-                                                    <!-- Tab-1 Title Goes Here  -->
-                                                    <a data-toggle="collapse" data-parent="#accordion-1-2" href="#hall-1-2-collapseTwo" class="" aria-expanded="false">
-                                                        <span class="detail col-sm-9">
-                                                            <span class="headline">Improving Wordpress</span>
-                                                            <span class="name">David Jones</span>
-                                                            <span class="company">CEO, DeviserWeb.</span>
-                                                        </span>
-                                                        <span class="time col-sm-3">
-                                                            <span class="show-time">10:30 AM - 12:00 PM</span>
-                                                            <span class="collapse-icon"><i class="fa fa-angle-down"></i></span>
-                                                        </span>
-                                                    </a>
-
-                                                </h4>
-                                            </div>
-                                            <div class="clearfix"></div>
-                                            <div id="hall-1-2-collapseTwo" class="panel-collapse collapse">
-
-                                                <!-- Tab-2 Detail Goes Here  -->
-                                                <div class="panel-body">
-                                                    <div class="row">
-                                                        <div class="col-lg-2 col-md-2 col-sm-2">
-                                                            <%= image_tag("speakers-img/2.jpg", class: "img-responsive") %>
-                                                        </div>
-                                                        <div class="col-lg-7 col-md-7 col-sm-12">
-                                                            <h4>Improving Wordpress</h4>
-                                                            <p>Event landing Sed facilisis justo vitae risus viverra vulputate. Finiti ipsum dignissim diam viverra condimentum. Donec sodales, diam eget mattis condimentum, quam neque tempus purus, event landing dictum viverra risus nisl quis metus.</p>
-                                                            <ul class="nav navbar-left">
-                                                                <li><span class="small time">2hour</span></li>
-                                                                <li><span class="small position">Beginner</span></li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-                                            </div>
-                                        </div>
-                                        <!-- End: Tab-2 -->
-
-                                        <!-- Start: Tab-3 -->
-                                        <div class="panel panel-default" id="hall-1-2-panel-3">
-                                            <div class="panel-heading">
-                                                <h4 class="panel-title">
-
-                                                    <!-- Tab-3 Title Goes Here  -->
-                                                    <a data-toggle="collapse" data-parent="#accordion-1-2" href="#hall-1-2-collapseThree" class="" aria-expanded="false">
-                                                        <span class="detail col-sm-9">
-                                                            <span class="headline">Dance With Code</span>
-                                                            <span class="name">Kulsum Doe</span>
-                                                            <span class="company">CEO, DeviserWeb.</span>
-                                                        </span>
-                                                        <span class="time col-sm-3">
-                                                            <span class="show-time">10:30 PM - 12:00 PM</span>
-                                                            <span class="collapse-icon"><i class="fa fa-angle-down"></i></span>
-                                                        </span>
-                                                    </a>
-
-                                                </h4>
-                                            </div>
-                                            <div class="clearfix"></div>
-                                            <div id="hall-1-2-collapseThree" class="panel-collapse collapse">
-
-                                                <!-- Tab-3 Detail Goes Here  -->
-                                                <div class="panel-body">
-                                                   <div class="row">
-                                                        <div class="col-lg-2 col-md-2 col-sm-2">
-                                                            <%= image_tag("speakers-img/1.jpg", class: "img-responsive") %>
-                                                        </div>
-                                                        <div class="col-lg-7 col-md-7 col-sm-12">
-                                                            <h4>Dance With Code</h4>
-                                                            <p>Event landing Sed facilisis justo vitae risus viverra vulputate. Finiti ipsum dignissim diam viverra condimentum. Donec sodales, diam eget mattis condimentum, quam neque tempus purus, event landing dictum viverra risus nisl quis metus.</p>
-                                                            <ul class="nav navbar-left">
-                                                                <li><span class="small time">2hour</span></li>
-                                                                <li><span class="small position">Beginner</span></li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-                                            </div>
-                                        </div>
-                                        <!-- End: Tab-3 -->
-
-                                    </div>
-                                    <!-- End: .panel-group  -->
-                                </div>
-                                <!--  End: tab  -->
-
-                            </div>
-                            <!-- End: 1st holl -->
-
-                            <!-- 2nd hall -->
-                            <div class="tab-pane schedule-hall-detail" id="hall-2-2">
-                                <div class="collapse-tab schedule-hall">
-                                    <div class="panel-group" id="accordion-2-2">
-                                        <span class="line-h"></span>
-
-
-                                        <!-- Start: Tab-1 -->
-                                        <div class="panel panel-default" id="hall-2-2-panel-1">
-                                            <div class="panel-heading">
-                                                <h4 class="panel-title">
-
-                                                    <!-- Tab-1 Title Goes Here  -->
-                                                    <a data-toggle="collapse" data-parent="#accordion-2-2" href="#hall-2-2-collapseOne" class="" aria-expanded="true">
-                                                        <span class="detail col-sm-9">
-                                                            <span class="headline">Less Motivation</span>
-                                                            <span class="name">Anjel Gorina</span>
-                                                            <span class="company ">CEO, DeviserWeb</span>
-                                                        </span>
-                                                        <span class="time col-sm-3">
-                                                            <span class="show-time">10:30 AM - 12:00 PM</span>
-                                                            <span class="collapse-icon"><i class="fa fa-angle-down"></i></span>
-                                                        </span>
-                                                    </a>
-
-                                                </h4>
-                                            </div>
-                                            <div class="clearfix"></div>
-                                            <div id="hall-2-2-collapseOne" class="panel-collapse collapse">
-
-                                                <!-- Tab-1 Detail Goes Here  -->
-                                                <div class="panel-body">
-                                                    <div class="row">
-                                                        <div class="col-lg-2 col-md-2 col-sm-2">
-                                                            <%= image_tag("speakers-img/1.jpg", class: "img-responsive") %>
-                                                        </div>
-                                                        <div class="col-lg-7 col-md-7 col-sm-12">
-                                                            <h4>Less Motivation</h4>
-                                                            <p>Event landing Sed facilisis justo vitae risus viverra vulputate. Finiti ipsum dignissim diam viverra condimentum. Donec sodales, diam eget mattis condimentum, quam neque tempus purus, event landing dictum viverra risus nisl quis metus.</p>
-
-                                                            <ul class="nav navbar-left">
-                                                                <li><span class="small time">2hour</span></li>
-                                                                <li><span class="small position">Beginner</span></li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-                                            </div>
-                                        </div>
-                                        <!-- End: Tab-1 -->
-
-
-                                        <!-- Start: Break Time -->
-                                        <div class="panel panel-default" >
-                                            <div class="panel-heading">
-                                                <h4 class="panel-title">
-
-                                                    <!-- Tab-1 Title Goes Here  -->
-                                                    <span class="panel-title-a">
-                                                        <span class="detail col-sm-9">
-                                                            <span class="headline">Lunch Brack</span>
-                                                        </span>
-                                                        <span class="time col-sm-3">
-                                                            <span class="show-time">12:00 PM - 12:30 PM</span>
-                                                            <span class="collapse-icon"></span>
-                                                        </span>
-                                                    </span>
-
-                                                </h4>
-                                            </div>
-                                        </div>
-                                        <!-- End: Break Time -->
-
-
-                                        <!-- Start: Tab-2 -->
-                                        <div class="panel panel-default" id="hall-2-2-panel-2">
-                                            <div class="panel-heading">
-                                                <h4 class="panel-title">
-
-                                                    <!-- Tab-1 Title Goes Here  -->
-                                                    <a data-toggle="collapse" data-parent="#accordion-2-2" href="#hall-2-2-collapseTwo" class="" aria-expanded="false">
-                                                        <span class="detail col-sm-9">
-                                                            <span class="headline">Less Motivation</span>
-                                                            <span class="name">David Jones</span>
-                                                            <span class="company">CEO, DeviserWeb.</span>
-                                                        </span>
-                                                        <span class="time col-sm-3">
-                                                            <span class="show-time">10:30 AM - 12:00 PM</span>
-                                                            <span class="collapse-icon"><i class="fa fa-angle-down"></i></span>
-                                                        </span>
-                                                    </a>
-
-                                                </h4>
-                                            </div>
-                                            <div class="clearfix"></div>
-                                            <div id="hall-2-2-collapseTwo" class="panel-collapse collapse">
-
-                                                <!-- Tab-2 Detail Goes Here  -->
-                                                <div class="panel-body">
-                                                    <div class="row">
-                                                        <div class="col-lg-2 col-md-2 col-sm-2">
-                                                            <%= image_tag("speakers-img/2.jpg", class: "img-responsive") %>
-                                                        </div>
-                                                        <div class="col-lg-7 col-md-7 col-sm-12">
-                                                            <h4>Less Motivation</h4>
-                                                            <p>Event landing Sed facilisis justo vitae risus viverra vulputate. Finiti ipsum dignissim diam viverra condimentum. Donec sodales, diam eget mattis condimentum, quam neque tempus purus, event landing dictum viverra risus nisl quis metus.</p>
-                                                            <ul class="nav navbar-left">
-                                                                <li><span class="small time">2hour</span></li>
-                                                                <li><span class="small position">Beginner</span></li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-                                            </div>
-                                        </div>
-                                        <!-- End: Tab-2 -->
-
-
-                                    </div>
-                                    <!-- End: .panel-group  -->
-                                </div>
-                                <!--  End: tab  -->
-                            </div>
-                            <!-- End: 2nd holl -->
-
-                        </div>
-                        <!-- End: 2nd day .tab-content -->
-                    </div>
-                    <!-- End: 2nd Day -->
-
-                </div>
-
-            </div>
+                
 
             <!-- Download Button -->
             <div class="download-btn defult-use-btn">
