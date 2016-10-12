@@ -481,6 +481,9 @@ footer .footer-body .copyright p .fa {
 .schedule-hall .panel-title-a .detail .company,
 .schedule-hall a .detail .company,
 .schedule-hall .panel-title-a .detail .name,
+.schedule-hall a .detail .headline .duration {
+  color: #666666;
+}
 .schedule-hall a .detail .name {
   color: #666666;
 }
@@ -677,6 +680,7 @@ footer {
 }
 .header-nav-2 .navbar-header a img {
   background-color: #FF4F00 !important;
+  height: 40px;
 }
 .header-nav-2 .navbar-header a span {
   border-color: transparent;
