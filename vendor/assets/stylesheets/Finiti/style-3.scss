@@ -254,7 +254,7 @@ p {
 }
 h1 {
   font-family: "Montserrat", sans-serif;
-  font-size: 50px;
+  font-size: 60px;
   line-height: 60px;
   font-weight: 400;
   color: #fff;
@@ -303,6 +303,9 @@ h3 {
   font-size: 30px;
   letter-spacing: 0.05em;
   text-transform: uppercase;
+}
+.section-heading.champion {
+  font-size: 50px;
 }
 .section-heading:after {
   content: "";
@@ -2202,7 +2205,7 @@ footer .footer-body .copyright p .fa {
 .schedule-hall .panel-title-a .detail span,
 .schedule-hall a .detail span {
   float: none;
-  display: block;
+  display: inline;
 }
 .schedule-hall .panel-title-a .detail .headline,
 .schedule-hall a .detail .headline {
