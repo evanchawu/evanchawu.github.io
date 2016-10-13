@@ -1,6 +1,6 @@
 //prevent playing background video when device is mobile
 
-function detectmob() { 
+function detectmob() {  // If mobile, then we do all this
 
     if( navigator.userAgent.match(/Android/i)
     || navigator.userAgent.match(/webOS/i)
@@ -11,13 +11,9 @@ function detectmob() {
     || navigator.userAgent.match(/Windows Phone/i)
     ){
 
-        // If mobile, then we do all this
+    }
+    else { // If not mobile then do this                    
+			document.getElementById("background-video").style.autoplay = "autoplay";
 
     }
-    else {
-
-        // If not mobile then do this                    
-		document.getElementById("background-video").style.autoplay = "autoplay";
-
-    }
-} // detectmob
+} 
