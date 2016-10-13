@@ -1,11 +1,7 @@
 <!-- Start: Background Video 
 ================================-->
-<!-- <video autoplay loop class="fillWidth background-video">
-    <source src="video/event-video.mp4" type="video/mp4"/>
-    <source src="video/event-video.webm" type="video/webm"/>
-</video> -->
 
-<%= video_tag("event-video.mp4", autoplay: true, loop: true, muted: true, id:"background-video", class: "fillWidth background-video") %>
+<%= video_tag("event-video.mp4", autoplay: "", loop: true, muted: true, id:"background-video", class: "fillWidth background-video") %>
     
 <div class="poster hidden">
     <%= image_tag("event-video.jpg", alt: "event video poster") %>

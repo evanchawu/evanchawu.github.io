@@ -22,7 +22,6 @@
 //= require Finiti/owl.carousel.min
 //= require Finiti/jquery.nav
 //= require Finiti/wow.min
-//= require Finiti/owl.carousel.min
 //= require Finiti/jquery.countdown
 //= require Finiti/jquery.flexslider-min
 //= require Finiti/jquery.counterup.min
@@ -30,8 +29,7 @@
 //= require Finiti/animated-headline.js
 //= require Finiti/custom-scripts-3
 //= require type_form
-//= require play_pause
-//= require contact
 //= require Google_ga
 //= require Zopim
+//= require prevent_play_video
 
