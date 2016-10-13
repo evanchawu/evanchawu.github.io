@@ -219,7 +219,7 @@ p {
   background-color: #ffffff;
 }
 .zoom-gallery a:after {
-  background-color: rgba(0, 155, 235, 0.69);
+  background-color: rgba(0, 155, 235, 0.69); /*關於街頭健身gallery 圖片hover後filter顏色*/ 
 }
 /**
  * ==================================
