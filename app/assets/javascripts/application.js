@@ -30,6 +30,5 @@
 //= require Finiti/custom-scripts-3
 //= require type_form
 //= require Google_ga
-//= require Zopim
-//= require prevent_play_video
+
 
