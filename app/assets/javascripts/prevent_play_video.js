@@ -13,6 +13,6 @@ void function() {  // If mobile, then we do all this
     } else { // If not mobile then do this     
         setTimeout(function(){
             document.getElementById("background-video").play();
-        }, 1000);
+        }, 0);
     }
 }();
