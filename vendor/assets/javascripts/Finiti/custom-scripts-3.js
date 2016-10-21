@@ -613,7 +613,7 @@ $(function() {
    * =======================================
    */
   function init_map() {
-    var myLocation = new google.maps.LatLng(25.005217, 121.534541);
+    var myLocation = new google.maps.LatLng(25.007095, 121.528050);
 
     var draggableValue;
       if($(document).width() <= 768){
