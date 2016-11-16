@@ -28,8 +28,7 @@
 //= require Finiti/jquery.magnific-popup.min
 //= require Finiti/animated-headline.js
 //= require Finiti/custom-scripts-3
-//= require type_form
 //= require Google_ga
 //= require prevent_play_video
 //= require Zopim
-
+//= require registration_end
