@@ -13,18 +13,18 @@
       <meta property="og:image" content="http://gin-a.tw/poster.jpg" />
       <meta property="og:url" content="http://gin-a.tw/" />
       <meta name="fb:app_id" content="1922127601146288">
-      
+
       <!-- TITLE OF SITE -->
       <title> 囡仔 - 台灣街頭健身地方聯盟 - 草根盃報名中！ </title>
       <%= csrf_meta_tags %>
-      
+
       <!-- CSS -->
       <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
       <%= favicon_link_tag 'favicon.ico', type: 'image/ico' %>
       <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700">
       <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800">
     </head>
-    
+
     <body>
       <%= yield %>
 
@@ -33,12 +33,10 @@
       <p class="alert"><%= alert %></p> -->
 
       <!-- JS -->
-      <script src="https://code.jquery.com/jquery-2.2.4.min.js"   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="   crossorigin="anonymous"></script>  
+      <script src="https://code.jquery.com/jquery-2.2.4.min.js"   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="   crossorigin="anonymous"></script>
 
-      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCXtKPN-097FWbfneioTa23SpRO-mEdfAs"></script>
-      
       <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
 
-                         
+
     </body>
 </html>
